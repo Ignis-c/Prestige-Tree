@@ -1,22 +1,22 @@
 let modInfo = {
 	name: "USTC Tree",
 	id: "ptr",
-	author: "Jacorb",
-	pointsName: "points",
+	author: "Ignis",
+	pointsName: "点数",
 	discordName: "PT Rewritten Server",
 	discordLink: "https://discord.gg/TFCHJJT",
 	changelogLink: "https://github.com/Jacorb90/Prestige-Tree/blob/master/changelog.md",
     offlineLimit: 1,  // In hours
     initialStartPoints: new Decimal(10), // Used for hard resets and new players
 	endgame: new Decimal("e3.14e16"),
-	// specialEndgameText: "v1.3 Endgame: e3.14e16 Points",
+	specialEndgameText: "v1.3 终局: e3.14e16 点数",
 }
 
 // Set your version in num and name
 let VERSION = {
 	num: "1.3",
 	patch: 1,
-	name: "The Expansion Update",
+	name: "扩展更新",
 }
 
 // If you add new functions anywhere inside of a layer, and those functions have an effect when called, add them here.
@@ -99,19 +99,19 @@ var notificationID = 0;
 function addNotification(type="none",text="This is a test notification.",title="",timer=3) {
 	switch(type) {
 		case "achievement":
-			notificationTitle = "Achievement Unlocked!";
+			notificationTitle = "解锁成就！";
 			notificationType = "achievement-notification"
 			break;
 		case "milestone":
-			notificationTitle = "Milestone Gotten!";
+			notificationTitle = "获得里程碑！";
 			notificationType = "milestone-notification"
 			break;
 		case "challenge":
-			notificationTitle = "Challenge Complete";
+			notificationTitle = "挑战完成";
 			notificationType = "challenge-notification"
 			break;
 		default:
-			notificationTitle = "Something Happened?";
+			notificationTitle = "什么事情发生了？";
 			notificationType = "default-notification"
 			break;
 	}
